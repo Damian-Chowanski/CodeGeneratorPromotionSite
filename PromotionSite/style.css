@@ -21,7 +21,6 @@ h3 p{
 }
 
 .main{
-    margin-top: 2%;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -36,6 +35,19 @@ h3 p{
     background-color: #023047;
     min-width: fit-content;
 }
+.underHeader {
+    display: flex;
+    width: 90%;
+    padding-left: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 3% 3%;
+    text-align: center;
+}
+
+.underHeader #item{
+    margin-left: 5px;
+}
 
 .pageTitle {
     color: #fb8500;
@@ -49,7 +61,7 @@ section {
     display: flex;
     width: 90%;
     padding: 10px 10px;
-    margin-top: 10px;
+    margin-bottom: 10px;
     box-shadow: 3px 3px 5px black;
     background-color: #8ecae6;
 }
@@ -60,6 +72,10 @@ section img {
     max-height: 180px;
     max-width: 250px;
     padding-right: 20px;
+}
+img {
+    max-width: 35%;
+    max-height: 30%;
 }
 
 section div{
@@ -74,14 +90,35 @@ section div{
     align-items: flex-end;
 }
 
-section a {
+#link{
+    background-color: #023047;
+    width: max-content;
+    padding: 1% 1%;
+    height: max-content;
+    color: #fb8500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 5%;
+    transition: background-color 0.5s, color 0.5s;
+    border-radius: 26px;
 }
 
-#linkInText{
-    margin-right: 0%;
+#link:hover {
+    color: white;
+    background-color: cornflowerblue;
 }
 
+#link:focus{
+    outline: none;
+    color: white;
+    background-color: cornflowerblue;
+}
+
+#link:active{
+    color: #023047;
+    background-color: #fb8500;
+}
 
 
 
